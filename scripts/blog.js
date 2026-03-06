@@ -1,4 +1,4 @@
-// AIRA ROSAL - Nutrition Posts (800 words each)
+// AIRA ROSAL - Nutrition Posts
 const airaPosts = [
   {
     id: 1,
@@ -176,7 +176,7 @@ const airaPosts = [
   },
 ];
 
-// KATHERINE SANCHEZ - Herbicides Posts (800 words each)
+// KATHERINE SANCHEZ - Herbicides Posts
 const katherinePosts = [
   {
     id: 3,
@@ -323,7 +323,7 @@ const katherinePosts = [
   },
 ];
 
-// ELISHA CLAIRE GANIA - Insecticides Posts (800 words each)
+// ELISHA CLAIRE GANIA - Insecticides Posts
 const elishaPosts = [
   {
     id: 5,
@@ -490,7 +490,7 @@ const elishaPosts = [
     `,
   },
 ];
-// ROBYN GONZALES - Fungicides Posts (800 words each)
+// ROBYN GONZALES - Fungicides Posts
 const robynPosts = [
   {
     id: 7,
@@ -679,7 +679,7 @@ const robynPosts = [
     `,
   },
 ];
-// ANDREW DIZON - Nutrition Posts (800 words each)
+// ANDREW DIZON - Nutrition Posts
 const andrewPosts = [
   {
     id: 9,
