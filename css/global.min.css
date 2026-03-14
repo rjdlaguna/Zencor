@@ -40,6 +40,29 @@
   background-color: #d4e8c2;
   color: #4f6d3a;
 }
+
+/* REGISTER + LOGIN BUTTON STYLE */
+
+.nav-links a[href="signup.html"],
+.nav-links a[href="login.html"]{
+  background:#8a9a5b;
+  color:#faf3e0 !important;
+  padding:8px 18px;
+  border-radius:30px;
+  margin-left:6px;
+  font-weight:600;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  transition:all 0.25s ease;
+}
+
+.nav-links a[href="signup.html"]:hover,
+.nav-links a[href="login.html"]:hover{
+  background:#d4e8c2;
+  color:#4f6d3a !important;
+  transform:translateY(-2px);
+  box-shadow:0 6px 18px rgba(0,0,0,0.3);
+}
+
 .menu-toggle {
   display: none;
   cursor: pointer;
