@@ -41,26 +41,82 @@
   color: #4f6d3a;
 }
 
-/* REGISTER + LOGIN BUTTON STYLE */
-
-.nav-links a[href="signup.html"],
-.nav-links a[href="login.html"]{
-  background:#8a9a5b;
-  color:#faf3e0 !important;
-  padding:8px 18px;
-  border-radius:30px;
-  margin-left:6px;
-  font-weight:600;
-  box-shadow:0 4px 12px rgba(0,0,0,0.25);
-  transition:all 0.25s ease;
+/* LOGIN BUTTON (NEW CLEAN STYLE) */
+.login-btn {
+  border: 1px solid #d4e8c2;
+  color: #d4e8c2 !important;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
-.nav-links a[href="signup.html"]:hover,
-.nav-links a[href="login.html"]:hover{
-  background:#d4e8c2;
-  color:#4f6d3a !important;
-  transform:translateY(-2px);
-  box-shadow:0 6px 18px rgba(0,0,0,0.3);
+.login-btn:hover {
+  background: #d4e8c2;
+  color: #4f6d3a !important;
+  transform: translateY(-2px);
+}
+
+/* USER PROFILE MENU */
+.user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-menu i {
+  font-size: 20px;
+  color: #d4e8c2;
+}
+
+/* DROPDOWN */
+.user-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #ffffff;
+  color: #333;
+  padding: 14px;
+  border-radius: 12px;
+  display: none;
+  min-width: 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.2s ease;
+}
+
+.user-dropdown p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-dropdown button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #e74c3c;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.user-dropdown button:hover {
+  background: #c0392b;
+}
+
+/* SMALL ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .menu-toggle {
@@ -471,4 +527,54 @@
   .footer-divider {
     margin: 30px 0;
   }
+}
+
+/* SAFE LOGIN BUTTON FIX */
+.nav-links .login-btn {
+  border: 1px solid #d4e8c2;
+  color: #d4e8c2 !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-links .login-btn:hover {
+  background: #d4e8c2;
+  color: #4f6d3a !important;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-icon {
+  width: 35px;
+  height: 35px;
+  background: #8a9a5b;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #ffffff;
+  color: #333;
+  padding: 14px;
+  border-radius: 12px;
+  display: none;
+  min-width: 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.2s ease;
+}
+
+.user-dropdown.show {
+  display: block;
 }
